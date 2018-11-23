@@ -26,16 +26,6 @@ class SampleListener
         Console.WriteLine("Disconnected");
     }
 
-    private string lastLine = "";
-
-    public void WriteGesture(string line)
-    {
-        if(line != lastLine)
-        {
-            Console.WriteLine(line);
-        }
-    }
-
     public void OnFrame(object sender, FrameEventArgs args)
     {
         // Get the most recent frame and report some basic information
@@ -144,6 +134,7 @@ class SampleListener
 
 class Sample
 {
+    /*
     public static void Main()
     {
         using (Leap.IController controller = new Leap.Controller())
@@ -165,4 +156,5 @@ class Sample
             Console.ReadLine();
         }
     }
+    */
 }
